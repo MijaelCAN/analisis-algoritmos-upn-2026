@@ -1,0 +1,18 @@
+# Entorno y editores
+.idea/
+.vscode/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Archivos temporales de Office
+~$*
+
+# Sistema
+Thumbs.db
+.DS_Store
+
+# Salidas generadas al ejecutar
+*.csv
+resultados/

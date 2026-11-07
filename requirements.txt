@@ -1,0 +1,4 @@
+# Solo librería estándar de Python (tkinter incluido).
+# Agregar aquí las dependencias que usen las próximas entregas, por ejemplo:
+# matplotlib==3.9.2
+# networkx==3.3
