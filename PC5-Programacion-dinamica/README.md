@@ -14,15 +14,21 @@ Una sola app **tkinter** con módulos seleccionables (caso SmartOptimizer S.A.C.
 
 ## Cómo ejecutar
 ```bash
-python src/<archivo>.py
+python src/smartoptimizer_app.py              # app con las 3 pestañas
+python src/smartoptimizer_app.py --capturas   # regenera las capturas en capturas/
+python src/dp_logica.py                       # solo la lógica, por consola
 ```
 
 ## Resultados y análisis
-_Completar al terminar: tabla de resultados, complejidad y conclusiones._
+| Casuística | Recurrencia | Resultado | Complejidad |
+|---|---|---|---|
+| 1. Rutas (0 → 10, pasos 1/2/3 a S/10/18/25) | `dp[i] = min(dp[i-1]+10, dp[i-2]+18, dp[i-3]+25)` | **S/ 85**, ruta 0→3→6→9→10 | O(n·k) |
+| 2. Técnicos (nivel 8, saltos 1/2/3) | `f(n) = f(n-1)+f(n-2)+f(n-3)`, `f(0)=1` | **81 formas** | O(n) |
+| 3. Proyectos sin consecutivos | `dp[i] = max(dp[i-1], dp[i-2]+b[i])` | **S/ 22 000** con P1, P3, P5, P7 | O(n) |
 
 ## Entrega
-- [ ] Código comentado en `src/`
-- [ ] Capturas de ejecución en `capturas/`
-- [ ] Análisis de resultados
-- [ ] Informe PDF (integrantes en la primera hoja) en `informe/`
+- [x] Código comentado en `src/`
+- [x] Capturas de ejecución en `capturas/`
+- [x] Análisis de resultados
+- [x] Informe PDF (integrantes en la primera hoja) en `informe/PC5_Semana5_Grupo7.pdf`
 - [ ] Subido a Blackboard
